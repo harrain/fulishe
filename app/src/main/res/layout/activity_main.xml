@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fulishe.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_above="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/bottombar_itemLinearLayout">
+
+            <Button
+                android:id="@+id/nav_newgood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item_new_good" />
+
+            <TextView
+                android:id="@+id/newgood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/bottombar_itemLinearLayout">
+
+            <Button
+                android:id="@+id/nav_boutique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item_boutique" />
+
+            <TextView
+                android:id="@+id/boutique"
+                style="@style/bottombar_itemtextview" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/bottombar_itemLinearLayout">
+
+            <Button
+                android:id="@+id/nav_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item_category" />
+
+            <TextView
+                android:id="@+id/category"
+                style="@style/bottombar_itemtextview" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/bottombar_itemLinearLayout">
+
+            <Button
+                android:id="@+id/nav_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item_cart" />
+
+            <TextView
+                android:id="@+id/cart"
+                style="@style/bottombar_itemtextview" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/bottombar_itemLinearLayout">
+
+            <Button
+                android:id="@+id/nav_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item_personal_center" />
+
+            <TextView
+                android:id="@+id/me"
+                style="@style/bottombar_itemtextview" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
